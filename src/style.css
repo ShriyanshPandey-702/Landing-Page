@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3238f2;
+}
+
+@theme {
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+  
+  h1, h2, h3{
+    font-family: var(--font-display);
+    color: #1f2937; /*text-gray-800*/
+    font-weight: 500;
+  }
+
+  .rocket, .float {
+    display: inline-block;
+    animation: rocket 2s ease-in-out infinite;
+    }
+
+  @keyframes rocket{
+    0%,100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+  } 
+
+  .anchor-hover {
+    @apply border-b border-dotted border-gray-300 hover:border-solid hover:border-gray-500;
+  }
+
+  .gradient-hover-outer{
+    @apply p-[1px] bg-zinc-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200;
+  }
+
+  .gradient-hover-inner{
+  @apply bg-gradient-to-br
+         from-zinc-50
+         to-zinc-100
+         transition duration-200
+         group-hover:from-red-100
+         group-hover:via-purple-100
+         group-hover:to-yellow-100;
+  }
+
+  /* .h2-style{
+    @apply text-5xl sm:font-semibold leading-normal max-w-2xl max-sm:text-3xl mb-12;
+  } */
+
+
+  /* step 3 right side animation */
+  #installWindow{
+    animation: floatWindow 4s ease-in-out infinite;
+  }
+
+  @keyframes floatWindow{
+
+      0%{
+          transform:translateY(0px);
+      }
+
+      50%{
+          transform:translateY(-12px);
+      }
+
+      100%{
+          transform:translateY(0px);
+      }
+
+  }
+
+  #progress{
+      transition:width .25s linear;
+  }
+}
