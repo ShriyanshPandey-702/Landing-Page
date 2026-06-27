@@ -129,7 +129,7 @@
                 <div id="lines-group" class="flex flex-col gap-4">
                     
                     <!-- line-1 -->
-                    <div id="line-1" class="flex gap-4 -translate-x-48 transition-transform ease-linear">
+                    <div id="line-1" class="flex gap-4 -translate-x-48 ease-linear">
                         <!-- logo 1 -->
                         <div class="flex flex-col bg-white min-w-24 min-h-24 items-center justify-center rounded-xl border border-gray-300 md:min-h-34 md:min-w-34">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="./assets/asset 2.png">
@@ -343,7 +343,7 @@
                     <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 1</span>
                     <h3 class="text-4xl">Bootstrap straight from your web app</h3>
                     <p class="text-lg text-gray-600">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
-                    <ul class="grid grid-cols-2 gap-2">
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         <!-- li 1 -->
                         <li class="flex items-center gap-4">
                             <i class="fa-solid fa-check text-gray-500"></i>
@@ -391,7 +391,7 @@
                 <div class="flex flex-col gap-6 lg:w-1/2">
 
                     <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 2</span>
-                    <h3 class="text-4xl">Add desktop code to customise your web app</h3>
+                    <h3 class="text-3xl sm:text-4xl">Add desktop code to customise your web app</h3>
                     <p class="text-lg text-gray-600">No need to create a new repository, just add code from our desktop APIs to your codebase and get access to system level functionality.</p>
                     <ul class="grid grid-cols-2 gap-2">
                         <!-- li 1 -->
@@ -522,7 +522,7 @@
 
             <!-- Step 3 -->
             <div id="step3"
-                class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row lg:items-center">
+                class="rounded-xl border px-5 sm:px-8 py-8 flex flex-col lg:flex-row lg:items-center overflow-hidden">
 
                 <!-- Left Part -->
                 <div class="flex flex-col gap-6 lg:w-1/2">
@@ -596,10 +596,10 @@
                 </div>
 
                 <!-- Right Part -->
-                <div class="relative w-full lg:w-1/2 flex justify-center items-center pt-12 ">
+                <div class="relative w-full lg:w-1/2 flex justify-center items-center pt-12 py-12 overflow-hidden">
 
                     <!-- Background -->
-                    <div class="relative w-[520px] h-[520px] rounded-[28px] overflow-hidden ">
+                    <div class="relative w-full max-w-[520px] h-[350px] aspect-square overflow-hidden">
 
                         <!-- Grid -->
                         <div
@@ -613,8 +613,7 @@
 
                         <!-- Gradient -->
                         <div
-                            class="absolute left-16 bottom-12 w-[300px] h-[300px] rounded-3xl
-                            ">
+                            class="absolute left-16 bottom-12 w-[300px] h-[300px] rounded-3xl">
                         </div>
 
                     </div>
@@ -622,13 +621,7 @@
                     <!-- Floating Install Window -->
                     <div
                         id="installWindow"
-                        class="absolute w-[430px] rounded-3xl overflow-hidden
-                        backdrop-blur-xl
-                        bg-white/70
-                        border border-white/80
-                        shadow-2xl
-                        transition-all
-                        duration-300 sm:">
+                           class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] sm:w-[85%] lg:w-[90%] max-w-[340px] sm:max-w-[380px] rounded-3xl overflow-hidden backdrop-blur-xl bg-white/70 border border-white/80 shadow-2xl transition-all duration-300">
 
                         <!-- Title -->
                         <div
@@ -641,11 +634,11 @@
                             Install App
                         </div>
 
-                        <div class="flex items-center gap-6 px-8 py-8">
+                        <div class="flex items-center gap-4 p-5 sm:px-8 sm:py-8">
 
                             <!-- Icon -->
                             <div
-                                class="w-16 h-16 rounded-2xl
+                                class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl
                                 bg-gradient-to-br
                                 from-pink-300
                                 to-yellow-300
@@ -656,7 +649,7 @@
 
                                 <h3
                                     id="installText"
-                                    class="text-3xl font-medium mb-4">
+                                    class="text-xl sm:text-3xl font-medium mb-4">
                                     Installing...
                                 </h3>
 
@@ -678,6 +671,7 @@
                     </div>
 
                 </div>
+
             </div>
 
         </div>
