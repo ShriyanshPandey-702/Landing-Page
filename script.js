@@ -1,3 +1,5 @@
+console.log("script loaded");
+
 const navDialog = document.getElementById("nav-dialog");
 
 function handleMenu(){
